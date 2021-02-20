@@ -14,4 +14,8 @@ public class Tauler {
     public char[] getParaulaSecreta() {
         return paraulaSecreta;
     }
+
+    public int getIntents() {
+        return intents;
+    }
 }
