@@ -53,4 +53,13 @@ public class Tauler {
         }
         return "";
     }
+
+    public String imprimirVides(){
+        String missatgeVides = null;
+        if(intents > 1){
+            missatgeVides = "Et queden "+ intents + " vides de" + intentsTotal;
+        }
+        return missatgeVides;
+
+    }
 }
