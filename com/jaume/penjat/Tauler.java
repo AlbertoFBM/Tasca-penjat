@@ -2,11 +2,13 @@ package com.jaume.penjat;
 
 public class Tauler {
     private int intents;
+    private int intentsTotal;
     private char[] paraulaSecreta;
     private String[] palabraEndevinada;
 
     public void inicialitzarPartida(String par, int intents) {
         this.intents = intents;
+        this.intentsTotal = intents;
         paraulaSecreta = par.toCharArray();
         palabraEndevinada = new String[par.length()];
     }
