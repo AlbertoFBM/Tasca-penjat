@@ -59,6 +59,9 @@ public class Tauler {
         if(intents > 1){
             missatgeVides = "Et queden "+ intents + " vides de" + intentsTotal;
         }
+        else{
+            missatgeVides = "Et queden 1 vides de " + intentsTotal;
+        }
         return missatgeVides;
 
     }
