@@ -16,6 +16,11 @@ public class Tauler {
     }
 
     public int getIntents() {
+
         return intents;
+    }
+
+    public char[] getParaulaEndevinada() {
+        return paraulaEndevinada;
     }
 }
