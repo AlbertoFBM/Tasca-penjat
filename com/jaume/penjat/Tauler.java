@@ -10,4 +10,8 @@ public class Tauler {
         paraulaSecreta = par.toCharArray();
         paraulaEndevinada = new char[par.length()];
     }
+
+    public char[] getParaulaSecreta() {
+        return paraulaSecreta;
+    }
 }
