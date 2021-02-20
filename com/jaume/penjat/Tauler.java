@@ -39,7 +39,9 @@ public class Tauler {
         String salida = "";
         for (int i=0; i<palabraEndevinada.length; i++) {
             if (palabraEndevinada[i] == null) {
-                salida = salida + "_";
+                salida += "_";
+            } else {
+                salida += palabraEndevinada[i];
             }
         }
         return salida;
