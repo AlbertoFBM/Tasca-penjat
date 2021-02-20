@@ -18,4 +18,11 @@ public class Tauler {
     public int getIntents() {
         return intents;
     }
+
+    public String verificar(String intent) {
+        if (intent.length() > 1) {
+            return "Lletra incorrecte";
+        }
+        return "";
+    }
 }
