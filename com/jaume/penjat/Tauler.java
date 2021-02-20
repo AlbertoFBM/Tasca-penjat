@@ -24,6 +24,14 @@ public class Tauler {
         return palabraEndevinada;
     }
 
+    public boolean hasGuanyat(){
+        for (int i = 0; i < palabraEndevinada.length; i++) {
+            if (palabraEndevinada[i].charAt(0) != paraulaSecreta[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 
     public String verificar(String intent) {
