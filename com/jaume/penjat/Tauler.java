@@ -27,13 +27,18 @@ public class Tauler {
 
 
     public String verificar(String intent) {
+        boolean encontrado = false;
         if (intent.length() > 1) {
             return "Lletra incorrecte";
         } else {
             for (int i=0; i<paraulaSecreta.length; i++) {
                 if (intent.charAt(0) == paraulaSecreta[i]) {
+                    encontrado = true;
                     palabraEndevinada[i] = intent;
                 }
+            }
+            if (!encontrado) {
+                this.intents--;
             }
         }
         return "";
