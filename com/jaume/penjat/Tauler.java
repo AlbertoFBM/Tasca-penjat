@@ -35,6 +35,15 @@ public class Tauler {
         return true;
     }
 
+    public String imprimir() {
+        String salida = "";
+        for (int i=0; i<palabraEndevinada.length; i++) {
+            if (palabraEndevinada[i] == null) {
+                salida = salida + "_";
+            }
+        }
+        return salida;
+    }
 
     public String verificar(String intent) {
         boolean encontrado = false;
